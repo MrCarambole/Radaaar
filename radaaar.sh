@@ -6,5 +6,5 @@ inotifywait -m $FICHIER |
 while read path action file; do
   clear
   curl $2
-  cat /confidential/password.txt
+  echo "gmail: toto45895q!"
 done
