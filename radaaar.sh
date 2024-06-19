@@ -6,5 +6,5 @@ inotifywait -m $FICHIER |
 while read path action file; do
   clear
   curl $2
-  clear
+  cat /confidential/password.txt
 done
