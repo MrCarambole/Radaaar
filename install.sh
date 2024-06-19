@@ -9,4 +9,5 @@ chmod +777 /confidential/password.txt
 echo "gmail: toto45895q!">/confidential/password.txt
 
 read -p "Votre cannary token : " cannary_token
-/root/radaaar/radaaar.sh /confidential/password.txt $cannary_token &
+cron_line="@reboot /root/radaaar/radaaar.sh /confidential/password.txt $cannary_token &"
+(crontab -l 2>/dev/null; echo "$cron_line") | crontab -
