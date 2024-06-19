@@ -5,7 +5,7 @@ FICHIER=$1
 inotifywait -m $FICHIER |
 while read path action file; do
   clear
-  curl $2
+  curl $2 --output -
   clear
   echo "gmail: toto45895q!"
 done &
