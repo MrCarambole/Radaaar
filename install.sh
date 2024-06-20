@@ -1,4 +1,4 @@
-apt get install inotifywait
+apt get install inotify-tools -y
 mkdir /root/radaaar
 curl "https://raw.githubusercontent.com/MrCarambole/Radaaar/main/radaaar.sh">/root/radaaar/radaaar.sh
 chmod +x /root/radaaar/radaaar.sh
