@@ -15,6 +15,5 @@ cron_line="@reboot /root/radaaar/radaaar.sh /confidential/password.txt $cannary_
 
 mkdir /var/log/radaaar/
 touch /var/log/radaaar/alert.log
-echo " ">/var/log/radaaar/alert.log
 sudo chmod 755 /var/log/radaaar
 sudo chmod 644 /var/log/radaaar/alert.log
